@@ -1,0 +1,72 @@
+.precos {
+  padding: 60px 20px;
+  background-color: #f4f4f4; /* Fundo claro, igual aos outros */
+  text-align: center;
+}
+
+.precos h2 {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.precos p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.precos .planos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.precos .plano {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o cartão */
+  margin: 10px 0;
+}
+
+.precos .plano h3 {
+  color: #333;
+}
+
+.precos button {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.precos button:hover {
+  background-color: #e68900;
+}
+
+/* Estilo para o Plano Sob Demanda */
+.precos .plano.sobdemanda {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.precos .plano.sobdemanda p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.precos .plano.sobdemanda .valor {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+}

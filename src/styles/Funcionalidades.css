@@ -1,0 +1,67 @@
+.funcionalidades {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.funcionalidades h2 {
+  font-size: 36px;
+  color: #000; /* Título agora em preto */
+  font-weight: bold; /* Título em negrito */
+  margin-bottom: 40px;
+}
+
+.funcionalidades .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.funcionalidades .plano,
+.funcionalidades .sobremanda {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.funcionalidades .plano h3,
+.funcionalidades .sobremanda h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.funcionalidades .plano ul,
+.funcionalidades .sobremanda ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.funcionalidades .plano ul li,
+.funcionalidades .sobremanda ul li {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.funcionalidades .plano ul li strong,
+.funcionalidades .sobremanda ul li strong {
+  color: var(--primary-color);
+}
+
+.funcionalidades .sobremanda p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.funcionalidades .sobremanda ul {
+  padding-top: 20px;
+}

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 80px; /* espaço para o header fixo */
+}
