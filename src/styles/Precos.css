@@ -1,67 +1,83 @@
 .precos {
-  padding: 60px 20px;
-  background-color: #f4f4f4; /* Fundo claro, igual aos outros */
-  text-align: center;
+  padding: 60px 20px 80px;
+  background-color: #f4f4f4;
+  text-align: center; /* centraliza todo conteúdo dentro da seção */
 }
 
 .precos h2 {
   color: #333;
   font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* deixa em maiúsculas, se quiser */
 }
 
 .precos p {
   color: #333;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
 }
 
+/* mantem o resto igual */
 .precos .planos {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left; /* volta o texto dos planos para alinhamento à esquerda */
 }
 
 .precos .plano {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 30px 20px;
+  border-radius: 12px;
   width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para o cartão */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .precos .plano h3 {
   color: #333;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.precos .plano p {
+  flex-grow: 1;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .precos button {
   background-color: #ff9900;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 12px 20px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
 }
 
 .precos button:hover {
   background-color: #e68900;
 }
 
-/* Estilo para o Plano Sob Demanda */
-.precos .plano.sobdemanda {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 .precos .plano.sobdemanda p {
-  font-size: 18px;
-  color: #333;
+  font-size: 16px;
+  color: #555;
   margin-bottom: 20px;
 }
 
@@ -69,4 +85,22 @@
   font-size: 20px;
   font-weight: bold;
   color: #ff0000;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .precos h2,
+  .precos p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .precos .planos {
+    justify-content: center;
+  }
+
+  .precos .plano {
+    width: 100%;
+    max-width: 350px;
+  }
 }

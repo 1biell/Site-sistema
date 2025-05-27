@@ -1,14 +1,18 @@
 .funcionalidades {
   background-color: #f4f4f4;
   padding: 60px 20px;
-  text-align: center;
+  /* Remova o text-align: center para que o texto herde o alinhamento padrão (esquerda) */
 }
 
 .funcionalidades h2 {
   font-size: 36px;
-  color: #000; /* Título agora em preto */
+  color: #000; /* Título em preto */
   font-weight: bold; /* Título em negrito */
   margin-bottom: 40px;
+  text-align: left; /* Alinha o título à esquerda */
+  max-width: 1200px; /* opcional: limite de largura para ficar alinhado com os planos */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .funcionalidades .grid {
@@ -17,6 +21,9 @@
   justify-content: center;
   gap: 30px;
   margin-top: 40px;
+  max-width: 1200px; /* para alinhar com o título */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .funcionalidades .plano,
@@ -64,4 +71,19 @@
 
 .funcionalidades .sobremanda ul {
   padding-top: 20px;
+}
+
+/* Responsividade, para manter alinhamento em telas menores */
+@media (max-width: 900px) {
+  .funcionalidades h2 {
+    text-align: center; /* em telas pequenas, centraliza para ficar melhor */
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .funcionalidades .grid {
+    justify-content: center;
+    max-width: 100%;
+  }
 }
